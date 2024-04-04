@@ -1,18 +1,19 @@
-NAME = easyfind
+NAME = Span
 
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 
 OBJ_DIR = obj/
 
-SRCS =	main.cpp
+SRCS =	main.cpp \
+		Span.cpp
 
 VPATH = $(OBJ_DIR)
 
 OBJS = $(SRCS:%.cpp=%.o)
 OBJ_PRE = $(addprefix $(OBJ_DIR), $(OBJS))
 
-DEP = easyfind.hpp
+DEP = Span.hpp
 
 all: $(NAME)
 
