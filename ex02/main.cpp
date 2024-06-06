@@ -52,6 +52,46 @@ int main()
 		}
 		std::list<int> s(lst);
 	}
-	
+	{
+	MutantStack<int> mstack;
+	mstack.push(5);
+	mstack.push(17);
+	MutantStack<int>::const_iterator it = mstack.cbegin();
+	MutantStack<int>::const_iterator ite = mstack.cend();
+	++it;
+	--it;
+	while (ite != it)
+	{
+	std::cout << "const iterator element : "<< *it << std::endl;
+	++it;
+	}
+	std::stack<int> s(mstack);
+	}
+	{
+	MutantStack<int> mstack;
+	mstack.push(5);
+	mstack.push(17);
+	MutantStack<int>::reverse_iterator it = mstack.rbegin();
+	MutantStack<int>::reverse_iterator ite = mstack.rend();
+	while (ite != it)
+	{
+	std::cout << "reverse iterator element : "<< *it << std::endl;
+	++it;
+	}
+	std::stack<int> s(mstack);
+	}
+	{
+	MutantStack<int> mstack;
+	mstack.push(5);
+	mstack.push(17);
+	MutantStack<int>::const_reverse_iterator it = mstack.crbegin();
+	MutantStack<int>::const_reverse_iterator ite = mstack.crend();
+	while (it != ite)
+	{
+	std::cout << "const reverse iterator element : "<< *it << std::endl;
+	++it;
+	}
+	std::stack<int> s(mstack);
+	}
 }
 

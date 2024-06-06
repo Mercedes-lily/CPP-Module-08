@@ -25,7 +25,7 @@ int main()
 		std::cout << "Argument not found :(" << std::endl;
 	else
 		std::cout << "Found :)" << std::endl;
-	if (easyfind(vec, 4) == 1)
+	if (easyfind(vec, 5) == 1)
 		std::cout << "Argument not found :(" << std::endl;
 	else
 		std::cout << "Found :)" << std::endl;
@@ -37,7 +37,7 @@ int main()
 		std::cout << "Argument not found :(" << std::endl;
 	else
 		std::cout << "Found :)" << std::endl;
-	if (easyfind(lst, 4) == 1)
+	if (easyfind(lst, 1) == 1)
 		std::cout << "Argument not found :(" << std::endl;
 	else
 		std::cout << "Found :)" << std::endl;
@@ -63,8 +63,4 @@ int main()
 		std::cout << "Argument not found :(" << std::endl;
 	else
 		std::cout << "Found :)" << std::endl;
-	
-	
-	
-	
 }

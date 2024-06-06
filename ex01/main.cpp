@@ -40,6 +40,12 @@ int main()
 	std::cout << "Shortest Span : " << span4.shortestSpan() << std::endl;
 	std::cout << "Longest Span  : " << span4.longestSpan() << std::endl;
 
+	Span span5(11000);
+	span5.addNumber(0 , 10500);
+	std::cout << "span5" << std::endl;
+	std::cout << "Shortest Span : " << span5.shortestSpan() << std::endl;
+	std::cout << "Longest Span  : " << span5.longestSpan() << std::endl;
+
 	
 
 }
